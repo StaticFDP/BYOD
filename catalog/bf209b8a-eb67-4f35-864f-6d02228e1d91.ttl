@@ -1,0 +1,71 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91>
+  a dcat:Resource, dcat:Catalog;
+  <http://www.w3.org/2000/01/rdf-schema#label> "BYOD";
+  dcterms:title "BYOD";
+  dcterms:hasVersion "1";
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcterms:accessRights <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "Eleni Mina"
+    ];
+  <http://semanticscience.org/resource/SIO_000628> <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <https://w3id.org/ejp-rd/fairdatapoints/wp13>;
+  dcterms:issued "2022-11-01T14:05:20.503704385Z"^^xsd:dateTime;
+  dcterms:modified "2022-11-16T19:16:03.80778887Z"^^xsd:dateTime;
+  dcat:dataset <https://byod.fdpcloud.org/dataset/22238845-1213-43f6-a60f-e84cdc9fa2ed>,
+    <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f>,
+    <https://byod.fdpcloud.org/dataset/53d501a6-2ff7-427c-b7ca-0b3659dc7bee>,
+    <https://byod.fdpcloud.org/dataset/6389ce4a-d07c-4f3c-ada9-ed051d79f6e6>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91#identifier>;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2022-11-01T14:05:20.503704385Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2023-06-02T08:25:41.334036509Z"^^xsd:dateTime;
+  dcat:themeTaxonomy <http://edamontology.org/topic_3170>, <http://edamontology.org/topic_3308>,
+    <http://www.orpha.net/ORDO/Orphanet_399>, <http://purl.obolibrary.org/obo/NCIT_C44282>,
+    <http://purl.bioontology.org/ontology/MEDDRA/10017758>, <http://purl.obolibrary.org/obo/GO_0001837>;
+  dcterms:conformsTo <https://byod.fdpcloud.org/profile/a0949e72-4466-4d53-8900-9436d1049a4b> .
+
+<https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91" .
+
+<https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<https://byod.fdpcloud.org/dataset/> a ldp:DirectContainer;
+  dcterms:title "Datasets";
+  ldp:membershipResource <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91>;
+  ldp:hasMemberRelation dcat:dataset;
+  ldp:contains <https://byod.fdpcloud.org/dataset/22238845-1213-43f6-a60f-e84cdc9fa2ed>,
+    <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f>,
+    <https://byod.fdpcloud.org/dataset/53d501a6-2ff7-427c-b7ca-0b3659dc7bee>,
+    <https://byod.fdpcloud.org/dataset/6389ce4a-d07c-4f3c-ada9-ed051d79f6e6> .
+
+<https://byod.fdpcloud.org/patientRegistry/> a ldp:DirectContainer;
+  dcterms:title "Patient Registries";
+  ldp:membershipResource <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91>;
+  ldp:hasMemberRelation dcterms:hasPart .
+
+<https://byod.fdpcloud.org/dataservice2/> a ldp:DirectContainer;
+  dcterms:title "Data Services";
+  ldp:membershipResource <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91>;
+  ldp:hasMemberRelation dcat:service .
+
+<https://byod.fdpcloud.org/profile/a0949e72-4466-4d53-8900-9436d1049a4b>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Catalog Profile" .

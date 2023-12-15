@@ -1,0 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://byod.fdpcloud.org/distribution/> a ldp:DirectContainer,
+    ldp:DirectContainer;
+  dcterms:title "Distributions", "Distributions";
+  ldp:hasMemberRelation dcat:distribution, dcat:distribution;
+  ldp:membershipResource <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f>,
+    <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f>;
+  ldp:contains <https://byod.fdpcloud.org/distribution/319179f6-f5f1-4b20-bc59-7e076917ce82>,
+    <https://byod.fdpcloud.org/distribution/01de0918-a7ca-4311-9b2e-1911a21a04ab>,
+    <https://byod.fdpcloud.org/distribution/319179f6-f5f1-4b20-bc59-7e076917ce82>,
+    <https://byod.fdpcloud.org/distribution/01de0918-a7ca-4311-9b2e-1911a21a04ab> .
+
+<file:///home/runner/work/ejprd-wp13-metadata/ejprd-wp13-metadata/fdp-populator/scripts/>
+  a foaf:Agent;
+  foaf:name "NCBI" .
+
+<https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f>
+  a dcat:Resource, dcat:Dataset;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Huntington disease mRNA";
+  dcterms:title "Huntington disease mRNA";
+  dcterms:hasVersion "1";
+  dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/>;
+  dcterms:description "Regional and cellular gene expression changes in human Huntington's disease brain";
+  dcterms:conformsTo <https://byod.fdpcloud.org/profile/2f08228e-1789-40f8-84cd-28e3288c3604>,
+    <https://byod.fdpcloud.org/profile/2f08228e-1789-40f8-84cd-28e3288c3604>;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcterms:accessRights <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f#accessRights>;
+  dcterms:publisher <file:///home/runner/work/ejprd-wp13-metadata/ejprd-wp13-metadata/fdp-populator/scripts/>;
+  <http://semanticscience.org/resource/SIO_000628> <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <https://byod.fdpcloud.org/catalog/bf209b8a-eb67-4f35-864f-6d02228e1d91>;
+  dcat:keyword "Hungtington disease", "microarray", "trancriptomics";
+  dcat:theme <http://edamontology.org/topic_3308>, <http://www.orpha.net/ORDO/Orphanet_399>,
+    <http://purl.obolibrary.org/obo/NCIT_C44282>;
+  dcat:distribution <https://byod.fdpcloud.org/distribution/319179f6-f5f1-4b20-bc59-7e076917ce82>,
+    <https://byod.fdpcloud.org/distribution/01de0918-a7ca-4311-9b2e-1911a21a04ab>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f#identifier>;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2022-11-16T19:19:27.133197699Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2023-06-02T08:24:50.307774365Z"^^xsd:dateTime .
+
+<https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f" .
+
+<https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<https://byod.fdpcloud.org/profile/2f08228e-1789-40f8-84cd-28e3288c3604>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Dataset Profile", "Dataset Profile" .
+
+<https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://byod.fdpcloud.org/dataset/049e99aa-0794-4331-8a50-d4cee8641c0f/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .

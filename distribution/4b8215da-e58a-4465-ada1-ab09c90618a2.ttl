@@ -1,0 +1,52 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2>
+  a dcat:Resource, dcat:Distribution;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Access distribution of : Distribution of Huntington disease transcriptomics";
+  dcterms:title "Access distribution of : Distribution of Huntington disease transcriptomics";
+  dcterms:hasVersion "1";
+  dcterms:license <https://creativecommons.org/licenses/by-nc/4.0>;
+  dcterms:description "Distribution of Huntington disease transcriptomics";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcterms:accessRights <https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2#accessRights>;
+  dcterms:publisher <https://orcid.org/0000-0002-8972-9206>;
+  <http://semanticscience.org/resource/SIO_000628> <https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <https://byod.fdpcloud.org/dataset/22238845-1213-43f6-a60f-e84cdc9fa2ed>;
+  dcat:accessURL <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE64810>;
+  dcat:mediaType "text/csv";
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2#identifier>;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2022-11-02T10:41:13.085101472Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2022-11-02T10:41:13.085101472Z"^^xsd:dateTime;
+  dcterms:conformsTo <https://byod.fdpcloud.org/profile/02c649de-c579-43bb-b470-306abdc808c7> .
+
+<https://orcid.org/0000-0002-8972-9206> a foaf:Agent;
+  foaf:name "https://orcid.org/0000-0002-8972-9206" .
+
+<https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2" .
+
+<https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<https://byod.fdpcloud.org/dataService/> a ldp:DirectContainer;
+  dcterms:title "Dataservices";
+  ldp:membershipResource <https://byod.fdpcloud.org/distribution/4b8215da-e58a-4465-ada1-ab09c90618a2>;
+  ldp:hasMemberRelation dcat:accessService .
+
+<https://byod.fdpcloud.org/profile/02c649de-c579-43bb-b470-306abdc808c7>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Distribution Profile" .
